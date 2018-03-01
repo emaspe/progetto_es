@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form clienti</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container" style="padding-top:70px;padding-bottom:70px">
+  
+ <form class="form-horizontal" id="invio_dati_cliente" name="invio_dati_cliente" action="/pagina.php">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="nome">Nome:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="nome" name="nome" placeholder="Nome">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cognome">Cognome:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="cognome" name="cognome" placeholder="Cognome">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="rag_sociale">Ragione sociale:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="rag_sociale" name="rag_sociale" placeholder="Ragione sociale">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="indirizzo">Indirizzo:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="indirizzo" name="indirizzo" placeholder="Indirizzo">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cap">CAP:</label>
+    <div class="col-sm-10">
+      <input type="number" required="true" class="form-control" id="cap" name="cap" placeholder="CAP">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="citta">Città:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="citta" name="citta" placeholder="Città">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="prov">Provincia:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="prov" name="prov" placeholder="Provincia">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="piva">Partita IVA:</label>
+    <div class="col-sm-10">
+      <input type="number" required="true" class="form-control" id="piva" name="piva" placeholder="Partita IVA">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="cod_fisc">Codice fiscale:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="cod_fisc" name="cod_fisc" placeholder="Codice fiscale">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="tel">Telefono:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="tel" name="tel" placeholder="Telefono">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="tel_sms">Telefono SMS:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="tel_sms" name="tel_sms" placeholder="Telefono SMS">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" required="true" class="form-control" id="email" name="email" placeholder="Email">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="data_attivazione">Data di attivazione:</label>
+    <div class="col-sm-10">
+      <input type="date" required="true" class="form-control" id="data_attivazione" name="data_attivazione" placeholder="Data di attivazione">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="recurring_service">Recurring service:</label>
+    <div class="col-sm-10">
+      <textarea required="true" class="form-control" id="recurring_service" name="recurring_service" placeholder="Recurring service"></textarea>
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="opzioni_dati">Opzioni dati:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="opzioni_dati" name="opzioni_dati" placeholder="Opzioni dati">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="id_piano_tel">Id piano tel:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="id_piano_tel" name="id_piano_tel" placeholder="Id piano tel">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="canone_fonia">Canone fonia:</label>
+    <div class="col-sm-10">
+      <input type="number" required="true" class="form-control" id="canone_fonia" name="canone_fonia" placeholder="Canone fonia">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="opzioni_tel">Opzioni tel:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="opzioni_tel" name="opzioni_tel" placeholder="Opzioni tel">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="canone">Canone:</label>
+    <div class="col-sm-10">
+      <input type="number" required="true" class="form-control" id="canone" name="canone" placeholder="Canone">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="ip_statico">IP statico:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="ip_statico" name="ip_statico" placeholder="IP statico">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="metodo_pagamento">Metodo pagamento:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="metodo_pagamento" name="metodo_pagamento" placeholder="Metodo pagamento">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="periodo">Periodo:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="periodo" name="periodo" placeholder="Periodo">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="metodo_sped_fattr">Metodo spedizione fattura:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="metodo_sped_fattr" name="metodo_sped_fattr" placeholder="Metodo spedizione fattura">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="id_agente">ID agente:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="id_agente" name="id_agente" placeholder="ID agente">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="agente_saldato">Agente saldato:</label>
+    <div class="col-sm-10">
+      <input type="date" required="true" class="form-control" id="agente_saldato" name="agente_saldato" placeholder="Agente saldato">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="data_inv_ultima_fatt">Data invio ultima fattura:</label>
+    <div class="col-sm-10">
+      <input type="date" required="true" class="form-control" id="data_inv_ultima_fatt" name="data_inv_ultima_fatt" placeholder="Data invio ultima fattura">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="data_scad_ultima_fatt">Data scadenza ultima fattura:</label>
+    <div class="col-sm-10">
+      <input type="date" required="true" class="form-control" id="data_scad_ultima_fatt" name="data_scad_ultima_fatt" placeholder="Data scadenza ultima fattura">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="data_scad_canone">Data scadenza canone:</label>
+    <div class="col-sm-10">
+      <input type="date" required="true" class="form-control" id="data_scad_canone" name="data_scad_canone" placeholder="Data scadenza canone">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="stato_ultima_fatt">Stato ultima fattura:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="stato_ultima_fatt" name="stato_ultima_fatt" placeholder="Stato ultima fattura">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="codice_cpe">Codice CPE:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="codice_cpe" name="codice_cpe" placeholder="Codice CPE">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="stato_cliente">Stato cliente:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="stato_cliente" name="stato_cliente" placeholder="Stato cliente">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="gateway">Gateway:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="gateway" name="gateway" placeholder="Gateway">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="metodo_pagamento">Metodo pagamento:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="metodo_pagamento" name="metodo_pagamento" placeholder="Metodo pagamento">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="istallatore">Installatore:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="istallatore" name="istallatore" placeholder="Installatore">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="note">Note:</label>
+    <div class="col-sm-10">
+      <textarea type="text" required="true" class="form-control" id="note" name="note" placeholder="Note"></textarea>
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="iban">IBAN:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="iban" name="iban" placeholder="IBAN">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="intestatario_cc">Intestatario cc:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="intestatario_cc" name="intestatario_cc" placeholder="Intestatario cc">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="paypal_code">Paypal code:</label>
+    <div class="col-sm-10">
+      <input type="text" required="true" class="form-control" id="paypal_code" name="paypal_code" placeholder="Paypal code">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="data_cessazione">Data cessazione:</label>
+    <div class="col-sm-10">
+      <input type="date" required="true" class="form-control" id="data_cessazione" name="data_cessazione" placeholder="Data cessazione">
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-primary btn-large btn-block">Invia</button>
+    </div>
+  </div>
+</form>
+</div>
+
+</body>
+</html>
